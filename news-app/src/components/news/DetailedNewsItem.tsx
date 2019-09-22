@@ -14,7 +14,7 @@ export interface IState {
     error?: string;
 }
 
-export default class DetailedNewsItem extends Component<IProps, IState> {
+class DetailedNewsItem extends Component<IProps, IState> {
 
     constructor(props: IProps, state: IState){
         super(props, state);
@@ -50,7 +50,7 @@ export default class DetailedNewsItem extends Component<IProps, IState> {
     }
 
     public render() {
-        const article = history.location.state.article
+        const article = history.location.state.article;
         const localState: any = this.state;
         if (localState.error) {
             return <div>Error: {localState.error!.message}</div>;
@@ -79,3 +79,5 @@ export default class DetailedNewsItem extends Component<IProps, IState> {
         }
     }
 }
+
+export default DetailedNewsItem;

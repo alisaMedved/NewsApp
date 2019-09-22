@@ -1,16 +1,16 @@
-import {StoreStructure} from "../entities/StoreStructure";
-import {ActionTypeBase} from "../actions/actionTypes";
-import {LOAD_NEWS, ADD_NEWS} from "./../actions/newsActions";
-
-const initState : StoreStructure = {
-   articles: [],
+import { StoreStructure } from '../entities/StoreStructure';
+import { Reducer } from 'redux';
+import { ActionTypeBase } from '../actions/actionTypes';
+import { LOAD_NEWS, ADD_NEWS } from '../actions/newsActions';
+const initState: StoreStructure = {
+    articles: [],
     read: [],
     favorite: [],
     withComplains: []
 };
 
-export const newsReducer : Reducer<any> = (state: StoreStructure, action: ActionTypeBase) => {
-    switch (action.type) {
+export const newsReducer: Reducer<any> = (state: StoreStructure, action: ActionTypeBase) => {
+    switch(action.type){
         case LOAD_NEWS:
             console.log('LOAD news (action in reducer');
             break;
@@ -21,3 +21,5 @@ export const newsReducer : Reducer<any> = (state: StoreStructure, action: Action
             return state;
     }
 }
+
+

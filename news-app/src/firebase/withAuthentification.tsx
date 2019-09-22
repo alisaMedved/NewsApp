@@ -1,6 +1,6 @@
 import * as React from "react";
 import { firebase } from ".";
-import { AuthUserContext } from "./AuthUser";
+import { AuthUserContext } from "./authUser";
 
 interface InterfaceProps {
     authUser?: any;

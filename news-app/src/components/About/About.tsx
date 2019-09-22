@@ -1,6 +1,6 @@
 import * as React from "react";
 import {Component} from "react";
-import 'About.css';
+import './About.css';
 
 export interface Iprops {
     opts?: string;

@@ -1,5 +1,5 @@
 import {LOAD_NEWS, ADD_NEWS, REMOVE_NEWS, EDIT_NEWS} from "./newsActions";
-import Article from "./../entities/Article";
+import { Article } from '../entities/Article';
 import {MARK_AS_READ, ADD_TO_FAVORITE, ADD_TO_READ_LATER,
     RATE_ARTICLE, ADD_COMMENT, ADD_COMPLAIN} from "./articleActions";
 
